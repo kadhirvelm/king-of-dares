@@ -1,2 +1,3 @@
 # kod
-Kings of dares, a web app for Kings, the game
+
+Kings of dares, a web app for Kings, the game.
