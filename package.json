@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "serve_frontend": "cd KodApp && yarn dev",
+    "serve_backend": "cd Server && yarn dev",
+    "dev": "yarn serve_frontend & yarn serve_backend"
+  }
+}

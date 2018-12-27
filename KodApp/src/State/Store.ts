@@ -10,7 +10,9 @@ import { Reducer } from "./Reducer";
 
 export default function configureStore(): Store<IStoreState> {
   const logging = applyMiddleware(loggingMiddleware()) as StoreEnhancer;
-  const initialState: IStoreState = {};
+  const initialState: IStoreState = {
+    sampleKey: ""
+  };
 
   return createStore(reduceCompoundActions(Reducer), initialState, logging);
 }

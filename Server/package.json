@@ -1,0 +1,31 @@
+{
+  "name": "kodbackend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch & nodemon dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadhirvelm/kod.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kadhirvelm/kod/issues"
+  },
+  "homepage": "https://github.com/kadhirvelm/kod#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
+  }
+}
