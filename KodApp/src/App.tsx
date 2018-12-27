@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import styles from "./App.module.scss";
 import { connect } from "react-redux";
+import styles from "./App.module.scss";
 
 class UnconnectedApp extends Component {
   public render() {
