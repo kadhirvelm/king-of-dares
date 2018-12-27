@@ -12,5 +12,9 @@ export class Router extends PureRouter {
     this.router.get("/", (req, res) => {
       res.json(`Kod Backend Running - V${process.env.npm_package_version}`);
     });
+
+    this.router.post("/dare", (req, res) => {
+      res.json("Sample dare");
+    });
   }
 }
