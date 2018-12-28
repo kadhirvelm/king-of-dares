@@ -1,3 +1,5 @@
+import { IDare } from "../Dispatchers/ServerDispatcher";
+
 export interface IStoreState {
-  sampleKey: string;
+  dare: IDare | undefined;
 }

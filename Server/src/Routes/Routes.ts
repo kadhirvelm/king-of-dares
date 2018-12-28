@@ -1,4 +1,5 @@
 import { PureRouter } from "./PureRouter";
+import { getDare } from "./RouteUtils";
 
 export const ROOT = "/";
 
@@ -9,12 +10,12 @@ export class Router extends PureRouter {
   }
 
   private mountRoutes() {
-    this.router.get("/", (req, res) => {
+    this.router.get("/", (_, res) => {
       res.json(`Kod Backend Running - V${process.env.npm_package_version}`);
     });
 
     this.router.post("/dare", (req, res) => {
-      res.json("Sample dare");
+      res.json(getDare(req.body));
     });
   }
 }

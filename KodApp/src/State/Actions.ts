@@ -1,5 +1,4 @@
 import { TypedAction } from "redoodle";
+import { IDare } from "../Dispatchers/ServerDispatcher";
 
-export const SampleAction = TypedAction.defineWithoutPayload(
-  "Action//SAMPLE_ACTION"
-)();
+export const SetDare = TypedAction.define("Server_Actions//SET_DARE")<IDare>();

@@ -1,4 +1,31 @@
+html {
+  font-family: "Love Ya Like A Sister", cursive;
+}
+
 .body {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw;
+}
+
+.new-dare {
+  position: fixed;
+  right: 3%;
+  bottom: 2.5%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 3px;
   display: flex;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #a9dfbf;
+  transition: background-color 300ms cubic-bezier(0.11, 0.58, 0.55, 1.07);
+
+  &:hover {
+    background-color: #196f3d;
+    color: white;
+  }
 }
