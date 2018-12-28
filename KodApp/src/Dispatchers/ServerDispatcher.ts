@@ -5,8 +5,7 @@ import { retrieveUrl } from "./Utils";
 
 export interface IDare {
   dareText: string;
-  dareLevel?: number;
-  darePlayers?: number;
+  totalPlayers: number;
 }
 
 export class ServerDispatcher {
